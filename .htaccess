@@ -1,0 +1,5 @@
+AuthName "Please Enter Password"
+AuthType Basic
+AuthUserFile /customers/f/4/8/miniw06.github.io/httpd.www/.htpasswd
+AuthGroupFile /dev/null 
+require valid-user
