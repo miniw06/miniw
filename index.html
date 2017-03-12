@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="robots" content="index, nofollow">
+	<meta name="description" content="Let the rain sing you a lullaby. Generator of rain sounds.">
+	<meta name="keywords" content="raindrops, rain sound, rain noise, rain simulator, background noise">
+	
+<!-- OPEN GRAPHS Meta -->
+<meta property="og:url" content="http://rainbowhunt.com">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rainbow Hunt">
+<meta property="og:description" content="Ultimate rain simulator. Let the rain sing you a lullaby.">
+<meta property="og:image" content="http://cdn.rainbowhunt.com/img/social.jpg">
+
+<!-- TWITTER Meta -->	
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@Rainyscope">
+<meta name="twitter:creator" content="@Rainyscope">
+<meta name="twitter:title" content="Rainbow Hunt">
+<meta name="twitter:description" content="Ultimate rain simulator. Let the rain sing you a lullaby.">
+<meta name="twitter:image" content="http://cdn.rainbowhunt.com/img/social.jpg">
+	
+	<title>RainbowHunt | Ultimate rain simulator.</title>
+	
+	<link rel="shortcut icon" href="favicon.ico">
+	
+	<link rel="stylesheet" type="text/css" href="http://cdn.rainbowhunt.com/css/normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+	<!-- Stylesheets from: demo.css + style1.css + menu/component.css + jquery-ui.css -->
+	<link rel="stylesheet" type="text/css" href="http://cdn.rainbowhunt.com/css/demo.css">	
+	<link rel="stylesheet" href="http://cdn.rainbowhunt.com/css/hint.min.css">
+
+		
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+<!-- jPlayer -->
+<script src="https://cdn.jsdelivr.net/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jplayer/2.9.2/jquery.jplayer.min.js"></script>
+<script src="http://cdn.rainbowhunt.com/js/jquery-ui.min.js"></script>
+
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	$("#jquery_jplayer_1").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Best rain",
+				mp3: "https://api.soundcloud.com/tracks/240717213/stream?secret_token=s-690fs&client_id=65ce172aa542a133606bee92c53c8eb5"
+			}).jPlayer("play");
+		},
+		swfPath: "js",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_1",
+		loop: true
+	});
+	
+	$(".jp-volume-bar1").slider({	
+        orientation: "vertical",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_1").jPlayer("volume", volume);
+		}
+    });
+	
+	$("#jquery_jplayer_2").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Window Raindrops",
+				mp3: "https://api.soundcloud.com/tracks/213105168/stream?secret_token=s-oO74g&client_id=65ce172aa542a133606bee92c53c8eb5"
+			});
+		},
+		swfPath: "js",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_2",
+		loop: true
+	});
+	
+	$(".jp-volume-bar2").slider({	
+        orientation: "vertical",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_2").jPlayer("volume", volume);
+		}
+    });		
+
+	$("#jquery_jplayer_3").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Rain constant",
+				mp3: "https://api.soundcloud.com/tracks/285705787/stream?secret_token=s-XQe8i&client_id=65ce172aa542a133606bee92c53c8eb5"
+			});
+		},
+		swfPath: "js",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_3",
+		loop: true
+	});
+	
+	$(".jp-volume-bar3").slider({	
+        orientation: "vertical",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_3").jPlayer("volume", volume);
+		}
+    });	
+
+	$("#jquery_jplayer_4").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Rainfall def",
+				mp3: "https://api.soundcloud.com/tracks/207326061/stream?secret_token=s-2oBA6&client_id=65ce172aa542a133606bee92c53c8eb5"
+			});
+		},
+		swfPath: "js",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_4",
+		loop: true
+	});
+	
+	$(".jp-volume-bar4").slider({	
+        orientation: "vertical",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_4").jPlayer("volume", volume);
+		}
+    });		
+	
+	
+	$("#jquery_jplayer_5").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Thunder",
+				mp3: "https://api.soundcloud.com/tracks/240229681/stream?secret_token=s-9ZHV5&client_id=65ce172aa542a133606bee92c53c8eb5"
+			});
+		},
+		swfPath: "js",
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_5",
+		loop: true
+	});
+	
+	$(".jp-volume-bar5").slider({	
+        orientation: "vertical",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_5").jPlayer("volume", volume);
+		}
+    });
+	
+$("#stop_all").click(function(){
+	setTimeout(function(){
+	$(".jp-pause").trigger("click")},3600000); // write the time after you want to stop 1000 = 1 second //
+});	
+			
+});
+//]]>
+</script>
+		
+<!-- Countdown by Krzysztof Furtak -->
+<script type="text/javascript" src="http://cdn.rainbowhunt.com/js/kkcountdown.js"></script>
+<script type="text/javascript">
+			$(document).ready(function(){
+                $("#stop_all").on('click', function() {
+                	var secs = $("#secs").val(),
+                        cdBox = $(".kkcountdown");
+
+                	$("#secs").parent("span").html("<strong>"+secs+"</strong>");
+                    $('.reset').show().on('click', function() {
+                        cdBox.trigger('countdown:reset');
+                    });
+
+	                cdBox.attr('data-seconds', secs)
+	                	.kkcountdown({
+                            displayDays:        true,
+                            displayZeroDays:    false,
+    	                    hoursText:          ':',
+    	                    minutesText:        ':',
+    	                    secondsText:        '',
+    	                    textAfterCount:     'Thank you',
+    	                    warnSeconds:        10,
+    	                    warnClass:          'alert',
+                            callback:           cBack
+    	                });
+                });
+
+            });
+
+            function cBack(){
+            	console.log('THE END - Function callback!');
+            }
+</script>
+</head>
+
+<body>
+
+<!-- jpplayer begins -->
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+<div id="jquery_jplayer_2" class="jp-jplayer"></div>
+<div id="jquery_jplayer_3" class="jp-jplayer"></div>
+<div id="jquery_jplayer_4" class="jp-jplayer"></div>
+<div id="jquery_jplayer_5" class="jp-jplayer"></div>
+
+<!-- player begins -->
+
+<!-- <audio id="2" src="https://api.soundcloud.com/tracks/207326061/stream?secret_token=s-2oBA6&client_id=65ce172aa542a133606bee92c53c8eb5"></audio> -->
+
+	<div class="image-preload">
+		<img src="http://cdn.rainbowhunt.com/img/drop-color.png" alt="">
+		<img src="http://cdn.rainbowhunt.com/img/drop-alpha.png" alt="">		
+		<img src="http://cdn.rainbowhunt.com/img/weather/texture-sun-fg.png" alt="">
+		<img src="http://cdn.rainbowhunt.com/img/weather/texture-sun-bg.jpg" alt="">		
+		<img src="http://cdn.rainbowhunt.com/img/weather/texture-sun-2fg.png" alt="">
+		<img src="http://cdn.rainbowhunt.com/img/weather/texture-sun-2bg.jpg" alt="">		
+		<img src="http://cdn.rainbowhunt.com/img/weather/texture-fallout-fg.png" alt="">
+		<img src="http://cdn.rainbowhunt.com/img/weather/texture-fallout-bg.jpg" alt="">		
+	</div>
+	
+	<div class="container">
+		<header class="just-header" id="topbar">
+
+			<img src="http://cdn.rainbowhunt.com/img/logo.png" class="logo" width="180" height="40" alt="">
+						
+
+					
+					
+		</header>
+		
+
+<div id="time" class="hide">		
+<span class="kkcountdown" data-seconds="3600"></span>
+</div>
+
+		<a href="javascript:;" id="showRight" class="men"><i class="fa fa-bars fa-3x"></i></a>	
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+			<h3>Menu</h3>		
+			<span><a href="javascript:;" id="hideui" class="btn">hide ui <i class="fa fa-eye-slash fa-lg"></i></a><a href="javascript:;" id="showui" class="btn2"><i class="fa fa-eye fa-lg"></i> show ui</a></span>			
+			<span><a href="#slide-2" class="btn">drops<i class="fa fa-tint fa-lg fa-fw"></i>- </a><a href="#slide-1" class="btn2"> +<i class="fa fa-tint fa-lg fa-fw"></i>drops</a></span>
+	
+			<span><a href="javascript:;" id="stop_all"><i class="fa fa-clock-o fa-fw"></i> &nbsp; Timer &#125; stop sounds</a></span>	
+		
+			<!-- <span><a href="#0.html" aria-label="More" class="hint-    -left"><i class="fa fa-toggle-on fa-fw"></i> &nbsp; More</a></span> -->		
+		</nav>
+		
+		<div class="slideshow">
+			<canvas width="1" height="1" id="container" style="position:absolute"></canvas>
+			<!-- Best Rain -->
+			<div class="slide" id="slide-1" data-weather="rain">
+			</div>
+
+			<!-- Sunny -->
+			<div class="slide" id="slide-3" data-weather="sunny">
+			</div>
+			
+			<!-- Drizzle -->
+			<div class="slide" id="slide-2" data-weather="drizzle">
+			</div>
+			
+			<!-- Fallout -->
+			<div class="slide" id="slide-4" data-weather="fallout">
+			</div>
+									
+			<nav class="slideshow__nav" id="controls">
+
+			<div id="jp_container_3">				
+				<div class="jp-volume-bar3" style="display:none;" id="slvolume3"></div>
+				<a href="javascript:;" aria-label="Light rain" class="jp-play hint--top" id="shower3"><img src="http://cdn.rainbowhunt.com/img/rain.png" class="knop" style="opacity: 0.6;" alt=""></a>
+				<a href="javascript:;" class="jp-pause" id="hider3"><img src="http://cdn.rainbowhunt.com/img/rain.png" class="knop" alt=""></a>				
+		    </div>
+			
+			<div id="jp_container_2">			
+				<div class="jp-volume-bar2" style="display:none;" id="slvolume2"></div>
+				<a href="javascript:;" aria-label="Raindrops hitting a window" class="jp-play hint--top" id="shower2"><img src="http://cdn.rainbowhunt.com/img/window.png" class="knop" style="opacity: 0.6;" alt=""></a>
+				<a href="javascript:;" class="jp-pause" id="hider2"><img src="http://cdn.rainbowhunt.com/img/window.png" class="knop" alt=""></a>				
+		    </div>		
+
+		    <div id="jp_container_1">				
+			     <div class="jp-volume-bar1" id="slvolume1"></div>
+				 <a href="javascript:;" aria-label="Rainstorm" class="jp-play hint--top" id="shower1"><img src="http://cdn.rainbowhunt.com/img/rain_heavy.png" class="knop" style="opacity: 0.6;" alt=""></a>
+			     <a href="javascript:;" class="jp-pause" id="hider1"><img src="http://cdn.rainbowhunt.com/img/rain_heavy.png" class="knop" alt=""></a>	             
+		    </div>			
+
+
+			<div id="jp_container_4">				
+				<div class="jp-volume-bar4" style="display:none;" id="slvolume4"></div>
+				<a href="javascript:;" aria-label="Splashing rainfall" class="jp-play hint--top" id="shower4"><img src="http://cdn.rainbowhunt.com/img/splash.png" class="knop" style="opacity: 0.6;" alt=""></a>
+				<a href="javascript:;" class="jp-pause" id="hider4"><img src="http://cdn.rainbowhunt.com/img/splash.png" class="knop" alt=""></a>				
+		    </div>		
+			
+			<div id="jp_container_5">		
+				<div class="jp-volume-bar5" style="display:none;" id="slvolume5"></div>
+				<a href="javascript:;" aria-label="Thunder" class="jp-play hint--top" id="shower5"><img src="http://cdn.rainbowhunt.com/img/thunderstorm.png" class="knop" style="opacity: 0.6;" alt=""></a>
+				<a href="javascript:;" class="jp-pause" id="hider5"><img src="http://cdn.rainbowhunt.com/img/thunderstorm.png" class="knop" alt=""></a>			
+		    </div>
+				
+			</nav>
+						
+<div class="just-demos2" id="daytime">
+<a href="#slide-1" class="btn" style="font-size: 16px;"> &nbsp; &nbsp; Day &nbsp; </a><a href="#slide-3" id="stopall" aria-label="No, please let it rain!" class="btn hint--bottom" style="font-size: 16px; border-radius: 0px;">Stop</a><a href="#slide-4" class="btn2" style="font-size: 16px;"> &nbsp; Night &nbsp; &nbsp; </a>
+</div>
+
+<div class="just-demos3 hide">
+<p>Powered by <a href="http://hipstersound.com" target="_blank"><img src="http://cdn.rainbowhunt.com/img/logo-sound.png" width="175" height="35" style="margin-bottom: -16px;" alt=""></a></p>	
+</div>	
+		
+		</div>
+		<p class="nosupport">Sorry, your browser doesn't support WebGL! Check out our minimalist version.</p>
+			
+<!-- <div id="footer">				
+</div> -->
+		
+	</div>
+
+<!-- Share buttons by Cubecamp.ru  www.cubecamp.ru/articles/share/cubecamp.html -->
+<div id="addbar" class="share-btn" data-url="http://www.rainbowhunt.com" data-title="RainbowHunt" data-desc="Ultimate rain simulator.">
+	<!-- <a data-id="vk"><i class="fa fa-vk fa-fw"></i></a> -->
+    <a data-id="tw"><i class="fa fa-twitter fa-fw"></i></a>
+	<a data-id="fb"><i class="fa fa-facebook fa-fw"></i></a>
+	<a data-id="gp" class="hide"><i class="fa fa-google-plus fa-fw"></i></a>
+	<a data-id="in" class="hide"><i class="fa fa-linkedin fa-fw"></i></a>
+	<p> &copy; 2016 Rainbowhunt | <a href="credits.html" target="_blank">Credits and attributions</a></p>
+</div>
+
+<!-- Hide-Show slider -->		
+<script>
+
+$( "#hider1" ).click(function() {
+  $( "#slvolume1" ).hide( "slow" );
+});
+$( "#shower1" ).click(function() {
+  $( "#slvolume1" ).show( "slow" );
+});
+
+$( "#hider2" ).click(function() {
+  $( "#slvolume2" ).hide( "slow" );
+});
+$( "#shower2" ).click(function() {
+  $( "#slvolume2" ).show( "slow" );
+});
+
+$( "#hider3" ).click(function() {
+  $( "#slvolume3" ).hide( "slow" );
+});
+$( "#shower3" ).click(function() {
+  $( "#slvolume3" ).show( "slow" );
+});
+
+$( "#hider4" ).click(function() {
+  $( "#slvolume4" ).hide( "slow" );
+});
+$( "#shower4" ).click(function() {
+  $( "#slvolume4" ).show( "slow" );
+});
+
+$( "#hider5" ).click(function() {
+  $( "#slvolume5" ).hide( "slow" );
+});
+$( "#shower5" ).click(function() {
+  $( "#slvolume5" ).show( "slow" );
+});
+
+$( "#stopall" ).click(function() {
+  $.jPlayer.pause();
+  $( "#slvolume1" ).hide( "slow" );
+  $( "#slvolume2" ).hide( "slow" );
+  $( "#slvolume3" ).hide( "slow" );
+  $( "#slvolume4" ).hide( "slow" );
+  $( "#slvolume5" ).hide( "slow" );
+});
+
+$( "#hideui" ).click(function() {
+  $( "#controls" ).css( "visibility", "hidden" );
+  $( "#topbar" ).css( "visibility", "hidden" );
+  $( "#daytime" ).css( "visibility", "hidden" );
+  $( "#footer" ).css( "visibility", "hidden" );
+});
+$( "#showui" ).click(function() {
+  $( "#controls" ).css( "visibility", "visible" );
+  $( "#topbar" ).css( "visibility", "visible" );
+  $( "#daytime" ).css( "visibility", "visible" );
+  $( "#footer" ).css( "visibility", "visible" );
+});
+
+</script>
+
+		<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+		<script src="http://cdn.rainbowhunt.com/menu/js/classie.js"></script>
+		<script>
+			var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+				showRight = document.getElementById( 'showRight' ),
+				body = document.body;
+
+			showRight.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+				disableOther( 'showRight' );
+			};
+
+			function disableOther( button ) {
+
+				if( button !== 'showRight' ) {
+					classie.toggle( showRight, 'disabled' );
+				}
+
+			}
+		</script>
+	
+<script src="http://cdn.rainbowhunt.com/js/index.min.js"></script>
+<script type="text/javascript" src="http://cdn.rainbowhunt.com/js/share.js"></script>
+
+</body>
+
+</html>
+
