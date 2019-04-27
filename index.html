@@ -346,8 +346,24 @@ var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el
   <div class="skill-bar-percent">75%</div>
 </div>
 
+	var skillsDiv = $('#skills');
+
+$(window).on('scroll', function(){
+	var winT = $(window).scrollTop(),
+  	winH = $(window).height(),
+  	skillsT = skillsDiv.offset().top;
+  if(winT + winH  > skillsT){
+  	$('.skillbar').each(function(){
+      $(this).find('.skillbar-bar').animate({
+        width:$(this).attr('data-percent')
+      },6000);
+    });
+  }
+});
+	
           </div>
      </div>
+	     
 </section>
     
 <section id="accolades" class="parallax-section" style="background-position: 50% 243px;">
